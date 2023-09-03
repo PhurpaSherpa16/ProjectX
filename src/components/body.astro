@@ -1,0 +1,212 @@
+---
+import pot from '../../public/images/pot1.png';
+import FB from '../../public/images/fb.png';
+import GB from '../../public/images/github.png';
+import IG from '../../public/images/instagram.png';
+import LD from '../../public/images/ld.png';
+import sixHundredMedia from '../components/600media.astro';
+---
+<div id="mainDiv">
+    <div id="bodyImage">
+        <img src={pot} alt="Images">
+    </div>
+    <div id="bodyContent" class="text-2xl ">
+        <div>
+            <h1>Hello There, 
+                <br/>I'm <span>Phurpa Sherpa.</span>
+            </h1>
+            <div id="wrapper">
+                <h2>I Am Into </h2>
+                <div id="spans">
+                    <span id="design"> Web Designer.</span>
+                    <span id="even"> Mobile Developer.</span>
+                    <span id="odd"> Web Developer.</span>
+                    <span id="even"> Desktop Developer.</span>
+                    <span id="odd"> Web Designer.</span>
+                </div>
+            </div>
+            <button>Connect Me</button>
+            <div id="socialIcons">
+                <a href="/"><img src={FB} title="Facebook" alt="Facebook Icon"></a>
+                <a href="/"><img src={IG} title="Instagram" alt="Instagram Icon"></a>
+                <a href="/"><img src={GB} title="GitHub" alt="Github Icon"></a>
+                <a href="/"><img src={LD} title="LinkedIn" alt="Linkedin Icon"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    #odd{
+        color: #Ff4500;
+    }
+    #mainDiv{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 44px;
+    }
+    
+    #bodyContent{
+        display: flex;
+        justify-content: left;
+        align-items: end;
+        padding-bottom: 100px;
+        margin-right: 64px;
+    }
+    #bodyContent h1{
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 56px;
+        letter-spacing: 2px;         
+    }
+    #bodyContent h1 span{
+        color:#Ff4500;
+        letter-spacing: 3px;
+    }
+
+    #bodyContent h2{
+        font-size: 16px;
+        line-height: 48px; 
+        letter-spacing: 1px;       
+    }
+    #bodyContent h2 span{
+        font-size: 16px;
+        line-height: 48px; 
+        letter-spacing: 3px;
+        font-weight: bold;       
+    }
+
+    #wrapper{
+        display: flex;
+    }
+
+    #spans{
+        display: grid;
+        overflow: hidden;
+        height: 40px;
+        box-sizing: content-box;
+        
+    }
+    #spans span{
+        font-size: 16px;
+        font-weight: 600;
+        padding: 8px 5px;
+        animation: slide 5s infinite;
+    }
+
+    @keyframes slide {
+        0% {transform: translateY(-0%);}
+        10% {transform: translateY(-112%);}
+        25% {transform: translateY(-100%);}
+        35% {transform: translateY(-212%);}
+        50% {transform: translateY(-200%);}
+        60% {transform: translateY(-312%);}
+        75% {transform: translateY(-300%);}
+        85% {transform: translateY(-412%);}
+        100% {transform: translateY(-400%);}
+    }
+
+    #bodyContent button{
+        margin: 10px 0px;
+        border: 2px solid #Ff4500;
+        color: #Ff4500;
+        text-align: center;
+        border-radius: 100px;
+        padding: 12px 32px;
+        font-size: 20px;
+        letter-spacing: 3px;
+        
+    }
+
+    #bodyContent button:hover{
+        background-color: #Ff4500;
+        color: white;
+        transition: 0.5s;
+    }
+
+    #socialIcons{
+        display: flex;
+
+    }
+    #socialIcons img{
+        padding: 10px 30px 0px 0px;
+    }
+
+    /* Media Queries of different resolution */
+    @media (width <= 768px){
+        #bodyImage img{
+            width: 80%;
+        }
+    }
+    @media (width <= 1025px){
+        #bodyContent{
+        padding-bottom: 60px;
+    }
+        #bodyContent h1{
+            font-size: 32px;
+            font-weight: bold;
+            line-height: 40px;
+            letter-spacing: 1px;
+        }
+        #bodyContent h1 span{
+            color:#Ff4500;
+            letter-spacing: 2px;
+        }
+        #bodyContent button{
+            margin: 10px 0px;
+            border: 2px solid #Ff4500;
+            color: #Ff4500;
+            text-align: center;
+            border-radius: 100px;
+            padding: 12px 32px;
+            font-size: 22px;
+            letter-spacing: 3px;
+        }
+        #bodyImage img{
+            width: 75%;
+        }
+    }
+
+    @media (width <=620px){
+        #bodyContent{
+            padding-bottom: 0px;
+        }
+        #bodyContent button{
+            width: 100%;
+        }
+        #socialIcons{
+            display: flex;
+            justify-content: space-between;
+        }
+        #socialIcons img{
+            cursor: pointer;
+        }
+    }
+    
+    @media (width <= 599px){
+        #mainDiv{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+        #bodyImage{
+            width: 75%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #bodyContent{
+            margin: 10px 0px 0px 0px;
+        }
+        #socialIcons img{
+            padding: 10px 0px 0px 0px;
+        }
+    }
+    @media (width <=321px){
+        #bodyContent{
+            padding: 0px 16px 0px 16px;
+        }
+    }
+</style>

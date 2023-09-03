@@ -1,0 +1,93 @@
+<!-- ---
+import MainLayout from '../layouts/mainLayout.astro';
+---
+<MainLayout title='Contact'>
+    <h1>Contact</h1>
+</MainLayout> -->
+
+<div id="body" >
+    <div id="wrapper">
+        <p>I'm into </p>
+        <div id="words">
+            <span id="design"> Web Designer</span>
+            <span id="dev"> Web Developer</span>
+            <span id="mobile"> Mobile Developer</span>
+            <span id="desk"> Desktop Developer</span>
+            <span id="design"> Web Designer</span>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    *, *:before, *:after{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 45px;
+    }
+    #design{
+        color: rgb(226, 40, 27);
+    }
+    #dev{
+        color: rgb(73, 226, 27);
+    }
+    #mobile{
+        color: rgb(16, 93, 207);
+    }
+    #desk{
+        color: rgb(209, 27, 226);
+    }
+    #application{
+        color: rgb(230, 32, 32);
+    }
+
+    #body{
+        height: 100vh;
+        background-color: rgb(81, 81, 228);
+        display: grid;
+        place-items: center;
+    }
+
+    #words{
+        overflow: hidden;
+    }
+    #words span{
+        font-weight: 700;
+        display: flex;
+        padding-left: 10px;
+        /* border: 1px solid black; */
+        height: 100%;
+        animation: spin 5s linear infinite;
+        
+    }
+
+    #wrapper{
+        background-color: aliceblue;
+        box-sizing: content-box;
+        height: 70px;
+        padding: 50px 20px;
+        box-shadow: 0 20px 25px rgb(66, 66, 70);
+        display: flex;
+    }
+
+    @keyframes spin {
+        0% { 
+            transform: translateY(-0%);
+        }
+        10% {
+            transform: translateY(-112%);
+        }
+        25% {transform: translateY(-100%);}
+        35% {transform: translateY(-212%);}
+        50% {transform: translateY(-200%);}
+        60% {transform: translateY(-312%);}
+        75% {transform: translateY(-300%);}
+        85% {transform: translateY(-412%);}
+        100% {transform: translateY(-400%);}
+        
+    }
+
+
+</style>
