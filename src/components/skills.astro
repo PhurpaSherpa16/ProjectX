@@ -1,0 +1,192 @@
+---
+
+---
+<script>
+    var htmlWidth = "75%";
+    var cssWidth = "65%";
+    var jsWidth = "50%";
+    var pythonWidth = "70%";
+    var flutterWidth = "60%";
+    var phpWidth = "45%";
+
+    var html = document.getElementById("htmlInnerBar");
+    var css = document.getElementById("cssInnerBar");
+    var js = document.getElementById("jsInnerBar");
+    var python = document.getElementById("pythonInnerBar");
+    var flutter = document.getElementById("flutterInnerBar");
+    var php = document.getElementById("phpInnerBar");
+
+    window.addEventListener("screenY", ()=>{
+
+    })
+
+    html.innerHTML = htmlWidth;
+    html.style.width = htmlWidth;
+
+    css.innerHTML = cssWidth;
+    css.style.width = cssWidth;
+
+    js.innerHTML = jsWidth;
+    js.style.width = jsWidth;
+
+    python.innerHTML = pythonWidth;
+    python.style.width = pythonWidth;
+
+    flutter.innerHTML = flutterWidth;
+    flutter.style.width = flutterWidth;
+
+    php.innerHTML = phpWidth;
+    php.style.width = phpWidth;
+    
+    
+</script>
+<div id="skillMainDiv">
+    <div id="headerSkills">
+        <h1>Skills</h1>
+    </div>
+    <div id="skills">
+        <div id="frontEnd">
+            <h2>Front End</h2>
+            <div id="items">
+                <div id="item">
+                    <div id="itemHeader">
+                        <h2>HTML</h2>
+                    </div>
+                    <div id="itemBar">
+                        <div id="outerBar">
+                            <div id="htmlInnerBar" class="innerBar"> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="item">
+                    <div id="itemHeader">
+                        <h2>CSS</h2>
+                    </div>
+                    <div id="itemBar">
+                        <div id="outerBar">
+                            <div id="cssInnerBar" class="innerBar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="item">
+                    <div id="itemHeader">
+                        <h2>JavaScript</h2>
+                    </div>
+                    <div id="itemBar">
+                        <div id="outerBar">
+                            <div id="jsInnerBar" class="innerBar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="backEnd">
+            <h2>Back End</h2>
+            <div id="items">
+                <div id="item">
+                    <div id="itemHeader">
+                        <h2>Python</h2>
+                    </div>
+                    <div id="itemBar">
+                        <div id="outerBar">
+                            <div id="pythonInnerBar" class="innerBar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="item">
+                    <div id="itemHeader">
+                        <h2>Flutter</h2>
+                    </div>
+                    <div id="itemBar">
+                        <div id="outerBar">
+                            <div id="flutterInnerBar" class="innerBar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="item">
+                    <div id="itemHeader">
+                        <h2>PHP</h2>
+                    </div>
+                    <div id="itemBar">
+                        <div id="outerBar">
+                            <div id="phpInnerBar" class="innerBar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>         
+
+<style>
+    #skillMainDiv{
+        margin-top: 50px;
+        height: 100vh;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 0px 10px 20px;
+    }
+    #headerSkills{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        font-weight: 600;
+        padding-bottom: 30px;
+    }
+    #skills{
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-around;
+        /* background-color: coral; */
+        font-size: 20px;
+        font-weight: 600;
+    }
+    #items{
+        font-size: 16px;
+        font-weight: 100;
+    }
+    #frontEnd, #backEnd{
+        width: 100%;
+    }
+    #item{
+        /* background-color: red; */
+        padding: 10px 0px;
+    }
+    #itemHeader{
+        padding-bottom: 5px;
+    }
+    #outerBar{
+        border: 1px solid #Ff4500;
+        border-radius: 50px;
+        width: 90%;
+    }
+    .innerBar{
+        background-color: #Ff4500;
+        border-radius: inherit;
+        padding: 0px;
+        text-align: center;
+        border: 1px solid white;
+    }
+
+    @media (width <= 768px){
+        #skillMainDiv{
+            height: 100%;
+        }
+        #skills{
+            flex-direction: column;
+            align-items: center;
+        }
+        #backEnd{
+            margin-top: 20px;
+        }
+    }
+</style>

@@ -1,0 +1,82 @@
+---
+import pot from '../../public/images/pot1.png';
+import FB from '../../public/images/fb.png';
+import GB from '../../public/images/github.png';
+import IG from '../../public/images/instagram.png';
+import LD from '../../public/images/ld.png';
+---
+
+
+<div id="mainDiv">
+            <div id="content">
+                <h1>Thank you for visiting.</h1>
+                <div id="socialIcons">
+                    <a href="/"><img src={FB} title="Facebook" alt="Facebook Icon"></a>
+                    <a href="/"><img src={IG} title="Instagram" alt="Instagram Icon"></a>
+                    <a href="/"><img src={GB} title="GitHub" alt="Github Icon"></a>
+                    <a href="/"><img src={LD} title="LinkedIn" alt="Linkedin Icon"></a>
+                </div>
+            </div>
+</div>
+
+<style>
+    #mainDiv{
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        display: flex;
+        height: 70vh;
+        justify-content: center;
+        align-items: center;
+    }
+    #mainDiv,
+    #content::before {
+        background: 
+        url("https://static.dezeen.com/uploads/2023/02/hexcal-studio-desktop-management-platform-design_dezeen_2364_hero.jpg") no-repeat center center/cover;
+    }
+
+    #content::before{
+        content: "";
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        z-index: -1;
+        filter: blur(5px);
+        top: 0px;
+    }
+
+    #content{
+        background: hsla(0, 0%, 100%, .3);
+        width: 70%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: rgb(8, 8, 8);
+        position: relative;
+        z-index: 2;
+        box-shadow: 5px 3px 30px black;
+        overflow: hidden;
+        border-radius: 20px;
+        color: rgb(3, 3, 3);
+    }
+
+    #content h1{
+        font-size: 2em;
+        color: white;
+    }
+    #content p{
+        text-align: center;
+        padding: 20px 50px;
+        color: white;
+    }
+
+    #socialIcons{
+        padding: 20px 0px 0px 0px;
+        display: flex;
+        width: 400px;
+        justify-content: space-evenly;
+    }
+
+</style>

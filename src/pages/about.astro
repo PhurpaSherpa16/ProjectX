@@ -1,7 +1,277 @@
 ---
 import MainLayout from '../layouts/mainLayout.astro';
+import hill1 from '../../public/images/hill1.png';
+import hill2 from '../../public/images/hill2.png';
+import hill3 from '../../public/images/hill3.png';
+import hill4 from '../../public/images/hill4.png';
+import hill5 from '../../public/images/hill5.png';
+import leaf from '../../public/images/leaf.png';
+import tree from '../../public/images/tree.png';
+import plant from '../../public/images/plant.png';
 ---
-<MainLayout title='About'>
+<!-- <MainLayout title='About'>
     
-</MainLayout>
+</MainLayout> -->
 
+<script>
+var text = document.getElementById('text');
+var leaf = document.getElementById('leaf');
+var tree = document.getElementById('tree');
+var hill1 = document.getElementById('hill1');
+var hill3 = document.getElementById('hill2');
+var hill4 = document.getElementById('hill4');
+var hill5 = document.getElementById('hill5');
+
+window.addEventListener('scroll', ()=>{
+    var value = window.scrollY;
+    text.style.marginTop = value * 2.5 + 'px';
+    leaf.style.top = value * -1.5 + 'px';
+    leaf.style.left = value * 1.5 + 'px';
+    hill5.style.left = value * 1.5 + 'px';
+    hill4.style.left = value * -1.5 + 'px';
+    hill1.style.top = value * 1 + 'px';
+});
+
+</script>
+
+ <div class="body">
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Service</a>
+        </nav>
+    </header>
+    <section class="parallax">
+        <img src={hill1} alt="hill1" id="hill1">
+        <img src={hill2} alt="hill2" id="hill2">
+        <img src={hill3} alt="hill3" id="hill3">
+        <img src={tree} alt="tree" id="tree">
+        <img src={hill4} alt="hill4" id="hill4">
+        <img src={hill5} alt="hill5" id="hill5">
+        <h2 id="text">Parallax Website</h2>
+        <img src={leaf} alt="leaf" id="leaf">
+        <img src={plant} alt="plant" id="plant">
+    </section>
+    <section class="sec">
+        <h2>Parallax Scrolling Website</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur soluta earum esse in eius praesentium reprehenderit, veniam officiis. 
+            Ducimus consectetur facere reiciendis exercitationem ipsa esse, veritatis vel molestias consequuntur officia?
+        </p>
+
+
+    </section>
+ </div>
+
+
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .body{
+        background-color: white;
+        min-height: 100vh;
+        overflow-x:hidden;
+    }
+    header{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        padding: 30px 100px;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+    }
+    .logo{
+        font-size: 2em;
+        font-weight: 700;
+        color: #359381;
+        pointer-events: none;
+    }
+    .navigation{
+        margin-left:300px;
+    }
+
+    .navigation a{
+        color: #359381;
+        border-radius: 20px;
+        padding: 6px 15px;
+        margin: 0px 10px;
+        font-weight: 600;
+        transition: 0.3s;
+        
+    }
+    .navigation a:hover, a.active{
+        background-color: #359381;
+        color: white;
+    }
+    .parallax{
+        position: relative;
+        height: 115vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #text{
+        position: absolute;
+        font-size: 5em;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        text-shadow:  2px 2px 4px rgb(19, 18, 18);
+    }
+    .parallax img{
+        position: absolute;   
+        top: 0;
+        left: 0;
+        width: 100%;
+        pointer-events: none;
+    }
+
+    .sec{
+        position: relative;
+        background-color: #359381;
+        padding: 50px;
+    }
+    .sec h2{
+        font-size: 5em;
+        font-weight: 600;
+        color: white;
+    }
+    .sec p{
+        color: white;
+
+    }
+
+
+</style>
