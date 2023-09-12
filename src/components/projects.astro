@@ -1,0 +1,57 @@
+---
+const datas = [
+    {title:"Website Design", body:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis officia itaque, nostrum eum fuga odio quidem"},
+    {title:"Mobile Design", body:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis officia itaque, nostrum eum fuga odio quidem"},
+    {title:"Desktop Design", body:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis officia itaque, nostrum eum fuga odio quidem"},
+];
+import Card from "./card.astro";
+---
+
+
+<div id="projectMainDiv">
+        <h1>Projects</h1>
+    <div id="cardDiv">
+        {
+            datas.map(data =>(
+            <Card  title ={data.title} body={data.body} />
+            ))
+        }
+    </div>
+    <div id="design">
+    </div>
+</div>
+
+<style>
+    :root{
+        --headerFontSize: 32px;
+    }
+    #projectMainDiv{
+        padding-bottom: 50px;
+    }
+    #projectMainDiv h1{
+        text-align: center;
+        font-size: var(--headerFontSize);
+        font-weight: 600;
+        padding: 50px 0px 50px 0px;
+    }
+
+    @media (width <=1800px) {
+        #cardDiv{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+    }
+    @media (width <= 1080px){
+        #cardDiv{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+    }
+
+    @media(width <= 600px){
+        #cardDiv{
+            display: grid;
+            grid-template-columns: auto;
+        }
+    }
+</style>

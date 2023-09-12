@@ -1,0 +1,104 @@
+---
+export interface Props{
+    title: string;
+    body: string;
+}
+const {title, body} = Astro.props as Props;
+---
+
+<div id="cards">
+    <div id="card">
+        <div id="items">
+            <div id="cardHeader">
+                <h1>{title}</h1>
+            </div>
+            <div id="cardContent">
+                <p>{body}</p>
+            </div>
+            <div id="cardButton">
+                <a href="#">Read more..</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    *{
+        transition: 0.3s;
+    }
+    #cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px;
+    }
+    #card{
+        width: 310px;
+        height: 300px;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        color: white;
+    }
+    #card::before {
+        background: url("https://cdn.dribbble.com/users/1126935/screenshots/16325356/media/0d45ed1a4ca2cd8274d2aab9990e29ba.png")
+            no-repeat center center/cover;
+    }
+    #card::before{
+        content: "";
+        width: 310px;
+        height: 300px;
+        position: absolute;
+        z-index: -1;
+        border-radius: 10px;
+        overflow: hidden;
+        
+    }
+    #card:hover::before{
+        filter: blur(5px);
+        transform: scale(1.3) rotate(3deg);
+        transition: 0.3s;
+    }
+    #items{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #cardHeader{
+        padding: 0px 10px;
+        font-size: 26px;
+        font-weight: 600;
+        position: relative;
+        bottom: -350px;
+    }
+    #cardContent{
+        padding: 0px 10px;
+        font-size: 14px;
+        font-weight: 200;
+        position: relative;
+        bottom: -350px;
+    }
+    #cardButton{
+        padding: 0px 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: rgb(250, 244, 210);
+        position: relative;
+        bottom: -350px;
+    }
+    #card:hover #cardHeader{
+        bottom: 0;
+        transition-delay: 0.4s;
+    }
+
+    #card:hover #cardContent{
+        bottom: 0;
+        transition-delay: 0.45s;
+    }
+    #card:hover #cardButton{
+        bottom: 0;
+        transition-delay: 0.5s;
+    }
+</style>
