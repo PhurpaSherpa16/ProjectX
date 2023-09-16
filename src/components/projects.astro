@@ -1,8 +1,8 @@
 ---
 const datas = [
-    {title:"Website Design", body:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis officia itaque, nostrum eum fuga odio quidem"},
-    {title:"Mobile Design", body:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis officia itaque, nostrum eum fuga odio quidem"},
-    {title:"Desktop Design", body:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis officia itaque, nostrum eum fuga odio quidem"},
+    {title:"Website Design", image:'https://designshack.net/wp-content/uploads/mobile-app-template.jpg', body:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis officia itaque, nostrum eum fuga odio quidem"},
+    {title:"Mobile Design",image:"https://ithemes.com/wp-content/uploads/2019/08/What-is-Your-Website-Design-Process-Blog-Post-Feature-Image-36119-01.png", body:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis officia itaque, nostrum eum fuga odio quidem"},
+    {title:"Desktop Design", image:"https://miro.medium.com/v2/resize:fit:1400/1*VbspKTNIZeu22XDOeiFaYg.png", body:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis officia itaque, nostrum eum fuga odio quidem"},
 ];
 import Card from "./card.astro";
 ---
@@ -13,7 +13,7 @@ import Card from "./card.astro";
     <div id="cardDiv">
         {
             datas.map(data =>(
-            <Card  title ={data.title} body={data.body} />
+            <Card  title ={data.title} body={data.body} image={data.image} />
             ))
         }
     </div>

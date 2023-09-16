@@ -1,0 +1,28 @@
+:root{
+    --primaryColor : #66FF99;
+    --secondaryColor : #FF5733;
+    --accentColor : #FFA500;
+    --backGroundColor: #F5F5F5;
+    --textColorLight: #FFFFFF;
+    --Dark: #333333;
+    --hoverFocusColor: #8A2BE2;
+    --borderColor: #CCCCCC;
+    --subtleAccetColor: #E6E6E6;
+    --errorAlertColor:  #D9534F; 
+
+    --black: #333333;
+    --white: #FFFFFF;
+    --gold: #ffd700;
+    --rose: #e6b8a2;
+    --MutedBlush: #f7d5cc;
+    --grey: #6b6b6b;
+    --navy: #232947;
+    --red: #ff5733;
+    --silver: #c0c0c0;
+    --beige: #F4EDEB;
+
+    
+}
+*{
+    transition: 0.3s linear;
+}

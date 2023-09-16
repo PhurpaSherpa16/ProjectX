@@ -2,8 +2,10 @@
 export interface Props{
     title: string;
     body: string;
+    image: string;
 }
-const {title, body} = Astro.props as Props;
+const {title, body, image} = Astro.props as Props;
+
 ---
 
 <div id="cards">
